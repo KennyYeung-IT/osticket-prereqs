@@ -91,6 +91,10 @@ Return to IIS Manager and restart the server. Then enable PHP Manager extensions
 <p>
 Rename ost-config-php from "C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php" to "C:\inetpub\wwwroot\osTicket\include\ost-config.php" and assign permissions to ost-config-php through Disable inheritance -> Remove All and New Permissions -> Everyone -> All. 
 </p>
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 <br />
 Install HeidiSQL and create a new session with a username and passsword. connect to sesstion and create a database called "osticket"
 
