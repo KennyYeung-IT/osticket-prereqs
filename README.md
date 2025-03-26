@@ -32,7 +32,7 @@ Create a Windows 10 virtual machine with 4 virtual CPUs and connect to it via RD
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Next, download the necessary files for the osticketing system via https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD 
+Next, download the necessary files for the osticketing system via https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD. Then locate and install the PHP manager first. 
 </p>
 <br />
 
