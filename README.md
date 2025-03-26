@@ -40,7 +40,7 @@ Next, extract and download the necessary files for the osticketing system via ht
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-From the "osTicket-installation-Files" install the Rewrite Module and create the directory C:\PHP.
+From the (osTicket-installation-Files) install the Rewrite Module and create the directory C:\PHP.
 </p>
 <br />
 
@@ -48,7 +48,7 @@ From the "osTicket-installation-Files" install the Rewrite Module and create the
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Unzip the PHP 7.3.8 "php-7.3.8-nts-Win32-VC15-x86.zip" from the "OsTicket-Installation-Files" into the 'C:\PHP' folder.
+Unzip the PHP 7.3.8 "php-7.3.8-nts-Win32-VC15-x86.zip" from the (OsTicket-Installation-Files) into the 'C:\PHP' folder.
 </p>
 <br />
 
@@ -56,7 +56,7 @@ Unzip the PHP 7.3.8 "php-7.3.8-nts-Win32-VC15-x86.zip" from the "OsTicket-Instal
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-From the "osTicket-Installation-Files" folder install VC_redist.x86.exe and MySQL 5.5.62 (mysql-5.5.62-win32.msi)
+From the "osTicket-Installation-Files" folder install VC_redist.x86.exe and MySQL 5.5.62 (mysql-5.5.62-win32.msi) Launch Configuration Wizard after install and create a username and password. 
 </p>
 <br />
 
@@ -64,8 +64,40 @@ From the "osTicket-Installation-Files" folder install VC_redist.x86.exe and MySQ
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Open IIS as an Admin and register PHP within IIS. Reload ISS 
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Install osTicket v1.15.8 from (osTicket-Installation-Files), unzip "osTicket-V1.15.8.zip" and copy the 'upload' folder into the web server "c:\inetpub\wwwroot" within wwwroot rename upload folder to osticket.
 </p>
 <br />
 
 
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Return to IIS Manager and restart the server. Then enable PHP Manager extensions php_imap.dll, php_intl.dll, and  php_opcache.dll.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Rename ost-config-php from "C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php" to "C:\inetpub\wwwroot\osTicket\include\ost-config.php" and assign permissions to ost-config-php through Disable inheritance -> Remove All and New Permissions -> Everyone -> All. 
+</p>
+<br />
+Install HeidiSQL and create a new session with a username and passsword. connect to sesstion and create a database called "osticket"
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Complete installation by registering users and emails. The osTicket can now be reached by users on http://localhost/osTicket/scp/login.php and end users can be simulated through http://localhost/osTicket/. 
+</p>
+<br />
